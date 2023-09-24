@@ -1,10 +1,4 @@
-/**
-* Template Name: Restaurantly
-* Updated: Jun 15 2023 with Bootstrap v5.3.0
-* Template URL: https://bootstrapmade.com/restaurantly-restaurant-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 
 /*--------------------------------------------------------------
 # General
@@ -102,7 +96,7 @@ h6 {
 .back-to-top:hover {
   background: #6f8d4f;
   color: #4e698f;
-}
+} 
 
 .back-to-top:hover i {
   color: #444444;
@@ -111,6 +105,11 @@ h6 {
 .back-to-top.active {
   visibility: visible;
   opacity: 1;
+}
+
+.bg-color{
+  background: #ffffff;
+  position: relative;
 }
 
 /*--------------------------------------------------------------
@@ -356,6 +355,15 @@ h6 {
   }
 }
 
+.box1{
+  background-color: white;
+  height: inherit;
+  
+  border-radius :  5px;
+  height: 1000px;
+  width: 1000px;
+}
+
 /**
 * Mobile Navigation 
 */
@@ -366,6 +374,10 @@ h6 {
   display: none;
   line-height: 0;
   transition: 0.5s;
+  position:relative;
+  align-items: flex-end;
+  right: 100%;
+  /* left: 0; */
 }
 
 @media (max-width: 991px) {
@@ -472,6 +484,7 @@ h6 {
   background-size: cover;
   position: relative;
   padding: 0;
+  text-align: right;
 }
 
 #hero:before {
@@ -514,6 +527,7 @@ h6 {
   color: #eee;
   margin-bottom: 10px 0 0 0;
   font-size: 22px;
+  
 }
 
 #hero .btns {
@@ -658,6 +672,9 @@ h6 {
   }
 }
 
+/* spilt contact--------------------- */
+
+
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
@@ -682,7 +699,7 @@ section {
   margin: 0 0 5px 0;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #aaaaaa;
+  color: #ffffff;
   font-family: "Poppins", sans-serif;
 }
 
@@ -691,7 +708,7 @@ section {
   width: 120px;
   height: 1px;
   display: inline-block;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgb(255, 255, 255);
   margin: 4px 10px;
 }
 
@@ -701,7 +718,9 @@ section {
   font-size: 36px;
   font-weight: 700;
   font-family: "Playfair Display", serif;
-  color: #cda45e;
+  color: #ffffff;
+  /* z-index: 1000; */
+  position: relative;
 }
 
 /*--------------------------------------------------------------
@@ -798,7 +817,7 @@ section {
   z-index: 1;
   content: "";
   border-left: 5px solid #6f8d4f;
-  border-top: 5px solid #6f8d4f;
+  border-top: 5px solid rgb(111, 141, 79);
   transition: 0.5s;
 }
 
@@ -866,18 +885,49 @@ section {
 /*--------------------------------------------------------------
 # Why Us
 --------------------------------------------------------------*/
+/* #why-us:before {
+  content: "";
+  background: rgba(0, 0, 0, 0);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+} */
+.why-us {
+  background: url("https://github.com/Industrialists-Ino/test.industrialists-ino/assets/53377403/f83fbf45-14dd-4388-b55d-9801cbc2ec8c") center center;
+  background-size: cover;
+  position: relative;
+  padding: 80px 0;
+  font-family: 'Poppins', sans-serif;
+  
+}
+
+.why-us:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.37);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  font-family: 'Poppins', sans-serif;
+
+}
 .why-us .box {
-  padding: 50px 30px;
+  padding: 40px 20px;
+  margin : 5px 10px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   transition: all ease-in-out 0.3s;
-  background: #4e698f;
+  background: #ffffff;
+  border-radius: 10px;
 }
 
 .why-us .box span {
   display: block;
   font-size: 28px;
   font-weight: 700;
-  color: #cda45e;
+  color: #6f8d4f;
 }
 
 .why-us .box h4 {
@@ -885,7 +935,9 @@ section {
   font-weight: 600;
   padding: 0;
   margin: 20px 0;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(26, 23, 23, 0.8);
+  font-family: 'Poppins', sans-serif;
+
 }
 
 .why-us .box p {
@@ -896,16 +948,44 @@ section {
 }
 
 .why-us .box:hover {
-  background: #cda45e;
+  background: #6f8d4f;
   padding: 30px 30px 70px 30px;
   box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
 }
 
+@media (min-width: 1024px) {
+  .why-us {
+    background-attachment: fixed;
+  }
+}
+
+
 .why-us .box:hover span,
 .why-us .box:hover h4,
 .why-us .box:hover p {
+  font-family: 'Poppins', sans-serif;
+
   color: #fff;
 }
+
+/* .why-us .box a{
+
+} */
+
+
+.service-img{
+  width: 100%;
+  border-radius: 5px;
+}
+
+.service-imggg{
+  width: 100%;
+  border-radius: 5px;
+  margin-top: -80px;
+}
+
+
+
 
 /*--------------------------------------------------------------
 # Menu Section
@@ -1002,6 +1082,78 @@ section {
   color: rgba(255, 255, 255, 0.5);
 }
 
+.whymee {
+  background: url("/assets/img/event-private.jpg") center center;
+  background-size: cover;
+  position: relative;
+  padding: 80px 0;
+  width:99%;
+  height: 500px;
+}
+
+.logom{
+  width : auto ;
+  height :auto;
+  position: relative;
+  z-index: 1;
+}
+
+.con23{
+  position:relative;
+  text-align: left;
+}
+
+.contact1{
+  float: right;
+  background: #ffffff;
+  height: auto;
+  width: auto;
+  border-radius: 10px;
+}
+
+.whymee:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.37);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.whymee .box {
+  width:fit-content;
+  padding: 50px 30px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  transition: all ease-in-out 0.3s;
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+.whymee .box span {
+  display: block;
+  font-size: 28px;
+  font-weight: 700;
+  color: #6f8d4f;
+}
+
+.whymee .box h4 {
+  font-size: 24px;
+  font-weight: 600;
+  padding: 0;
+  margin: 20px 0;
+  color: rgba(26, 23, 23, 0.8);
+}
+
+.whymee .box p {
+  color: #aaaaaa;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
 /*--------------------------------------------------------------
 # Specials
 --------------------------------------------------------------*/
@@ -1010,7 +1162,7 @@ section {
 }
 
 .specials .nav-tabs {
-  border: 0;
+  border: 1000px;
 }
 
 .specials .nav-link {
@@ -1022,6 +1174,7 @@ section {
   border-right: 2px solid #cda45e;
   font-weight: 600;
   font-size: 15px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .specials .nav-link:hover {
@@ -1219,7 +1372,7 @@ section {
 
 .book-a-table .php-email-form input,
 .book-a-table .php-email-form textarea {
-  border-radius: 0;
+  border-radius: 32px;
   box-shadow: none;
   font-size: 14px;
   background: #0c0b09;
@@ -1260,7 +1413,7 @@ section {
 }
 
 .book-a-table .php-email-form button[type=submit]:hover {
-  background: #d3af71;
+  background: #6f8d4f;
 }
 
 /*--------------------------------------------------------------
@@ -1300,7 +1453,7 @@ section {
 
 .testimonials .testimonial-item .quote-icon-left,
 .testimonials .testimonial-item .quote-icon-right {
-  color: #d3af71;
+  color: #6f8d4f;
   font-size: 26px;
 }
 
@@ -1347,20 +1500,44 @@ section {
 /*--------------------------------------------------------------
 # Gallery
 --------------------------------------------------------------*/
+
+.gallery{
+    background: url("https://github.com/Industrialists-Ino/industrialists.ino1/assets/115163920/c63dde0b-58ee-4658-8c82-85d91d2db854") center center;
+    background-size: cover;
+    position: relative;
+    padding: 80px 0; 
+}
+.gallery:before {
+  content: "";
+  background: #03020280;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
 .gallery .gallery-item {
   overflow: hidden;
-  border-right: 3px solid #454035;
-  border-bottom: 3px solid #454035;
+  /* border-right: 3px solid #454035; */
+  /* border-bottom: 3px solid #454035; */
+  padding: 5px;
+  border-radius: 10px;
 }
 
 .gallery .gallery-item img {
   transition: all ease-in-out 0.4s;
+  border-radius: 10px;
 }
 
 .gallery .gallery-item:hover img {
   transform: scale(1.1);
+  border-radius: 10px;
 }
 
+.pader{
+  padding-top: 10vh;
+}
 /*--------------------------------------------------------------
 # Chefs
 --------------------------------------------------------------*/
@@ -1370,6 +1547,11 @@ section {
   background: #343a40;
   position: relative;
   overflow: hidden;
+}
+
+.logo-m{
+  width: 220px ;
+  height :50px;
 }
 
 .chefs .member .member-info {
@@ -1458,7 +1640,7 @@ section {
   float: left;
   width: 44px;
   height: 44px;
-  background: #cda45e;
+  background: #4c9002;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1534,7 +1716,7 @@ section {
   width: 24px;
   height: 24px;
   margin: 0 10px -6px 0;
-  border: 3px solid #cda45e;
+  border: 3px solid #70cf0b;
   border-top-color: #4e698f;
   animation: animate-loading 1s linear infinite;
 }
@@ -1582,7 +1764,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #d3af71;
+  background: #6f8d4f;
 }
 
 @keyframes animate-loading {
@@ -1734,7 +1916,7 @@ section {
 }
 
 #footer .footer-top .footer-newsletter form input[type=submit]:hover {
-  background: #d3af71;
+  background: #6f8d4f;
 }
 
 #footer .copyright {
