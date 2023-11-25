@@ -188,7 +188,9 @@ h6 {
   border-bottom: 1px solid #37332a; */
   top: 0;
   background-color: #4e698f6f; /* Adjust opacity to control the glass effect */
-  backdrop-filter: blur(10px); /* This property creates the frosted glass effect */
+  
+  /* backdrop-filter: blur(10px); This property creates the frosted glass effect */
+  /* Here is the problem of the nav bar that is not showing in other pages */
   padding: 10px 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
   display: flex;
